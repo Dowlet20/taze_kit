@@ -1,0 +1,65 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 
+body {
+    @apply ;
+} */
+
+
+.custom-table-td-main-book {
+    @apply font-custom-sans py-1
+    font-semibold text-black text-[14px];
+}
+
+.custom-table-td-part-book {
+    @apply font-semibold text-[13px]
+    font-custom-sans pb-2
+    ;
+}
+
+.custom-table-td-main-book-card {
+    @apply font-custom-sans py-[2px]
+    font-semibold text-black text-[14px];
+}
+
+.custom-table-td-part-book-card {
+    @apply font-semibold text-[14px]
+    font-custom-sans
+    ;
+}
+
+.custom-table-td-main-book-1 {
+    @apply font-sans py-3 md:py-[12px]
+    font-semibold text-black text-[16px]
+    md:text-[18px]
+    ;
+}
+
+.custom-table-td-part-book-1 {
+    @apply font-semibold text-[16px] md:text-[18px]
+    font-custom-sans;
+}
+
+.custom-leftbar-button {
+    @apply font-custom-sans px-[4px] py-[2px]   border-[1px] 
+    border-gray-800 text-[13px] focus:outline-none hover:bg-slate-500
+    font-bold w-[52px] focus-within:bg-slate-600 bg-slate-300
+   focus-within:text-slate-100 hover:text-slate-100;
+}
+
+.custom-genre-button {
+    @apply bg-gradient-to-b h-[26px] pb-[2px]
+    from-gray-200 to-gray-400 text-left w-full
+    text-[14px] font-custom-sans font-semibold
+}
+
+.custom-sort-button {
+    @apply font-custom-sans px-[15px] h-[30px] mr-[5px] border-[1px] 
+    border-gray-800 text-[14px] focus:outline-none hover:bg-slate-500
+    font-bold  focus-within:bg-slate-500 bg-slate-300
+   focus-within:text-slate-100 hover:text-slate-100;
+}
