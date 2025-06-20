@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import Image from "next/image"
+//import Image from "next/image"
 import { useEffect, useState } from "react"
 import axiosInstance from "../../utils/axiosInstance"
 import Pagination from '@mui/material/Pagination';
@@ -96,8 +96,7 @@ const Author = () => {
             <Link key = {author["id"]} 
             href={`/author/${author["id"]}`} className='flex flex-col items-center bg-white shadow-custom-2 hover:shadow-custom hover:scale-105 transition-transform duration-200 w-[170px] py-[2px] rounded-md'>
                 <div className="h-[190px] w-[165px] flex overflow-hidden  rounded-md">
-                    <Image
-                        priority 
+                    <img
                         alt="check surat kitap"
                         src={author["get_image"] ? `${base_URL}${author["get_image"]}` : "/default-author.png"}
                         height={190}

@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import Image from "next/image"
+//import Image from "next/image"
 import { useEffect, useState } from "react"
 import { useAppContext } from "../../../context"
 import Pagination from '@mui/material/Pagination';
@@ -201,13 +201,12 @@ const Genre = ({params}) => {
                         </i>
                     </button>
                      <Link className="h-[220px] flex w-[150px] overflow-hidden mr-[5px] rounded-md" href={`/book/${book?.["id"]}`}>
-                        <Image
+                        <img
                             alt="check surat kitap"
                             src={book?.["get_image"] ? `${base_URL}${book?.["get_image"]}` : "/default-book.png"}
                             height={205}
                             width={108}
                             className="object-fit object-center rounded-md w-full h-auto"
-                            priority 
                         />
                     </Link>
                     <Link href={`/book/${book?.["id"]}`} className="font-custom-sans w-full whitespace-nowrap overflow-hidden leading-6 text-ellipsis font-semibold text-[14px] ml-[2px]">
@@ -243,13 +242,12 @@ const Genre = ({params}) => {
                     <div className="flex flex-col mt-[5px] md:justify-center items-center">
                         <div className='flex flex-col mt-[20px] items-center self-center'>
                             <div className="h-[185px] w-[145px] flex overflow-hidden rounded-md">
-                                <Image
+                                <img
                                     alt="check surat kitap"
                                     src={arr.includes(parseInt(params["id"], 10)) ? `/genre/${params["id"]}.png` : "/genre/default.png"}
                                     height={185}
                                     width={145}
                                     className="object-cover object-center w-full h-auto"
-                                    priority 
                                 />
                             </div>
                             <div className="ml-[7px] mt-[10px] flex-1 px-[16px] h-[205px] ">

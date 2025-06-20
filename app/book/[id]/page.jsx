@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import Image from "next/image";
+//import Image from "next/image";
 import axiosInstance from "../../../utils/axiosInstance";
 import { useRouter } from "next/navigation";
 import {
@@ -88,14 +88,12 @@ const Page = ({params}) => {
             <div className="flex flex-col md:flex-row w-full md:items-start  md:justify-around">
                 <div className="flex flex-col items-center">
                     <div className="overflow-hidden flex h-[380px] w-[250px] rounded-md">
-                        <Image 
+                        <img 
                             alt="Umumy kitap surat"
                             height={380}
                             width={250}
                             src={book?.["get_image"] ? `${base_URL}${book?.["get_image"]}` : "/default-book.png"}
                             className="object-fit filter object-center rounded-md w-full h-auto"
-
-                            priority 
                         />
                     </div>
                     <div className="flex justify-around w-[300px] md:mt-[35px] mt-[40px] items-center">

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useAppContext } from "../../context"
-import Image from "next/image";
+//import Image from "next/image";
 import { useRouter } from "next/navigation";
 import HomeIcon from '@mui/icons-material/Home';
 import { useEffect, useState } from "react";
@@ -87,12 +87,11 @@ useEffect(() => {
               </button>
             </div>
               <div className={`flex items-center   ${!token ? "md:ml-[83px]" : "md:ml-[155px]"} md:self-center`}>
-                   <Image  
+                   <img  
                         src="/Image/library_icon.png"
                         alt="liked things"
                         width={45}
                         height={45}
-                        priority 
                         className="w-full h-auto sm:block hidden"
                       />
                 <Link href="/" className="custom-font-sans font-extrabold text-[20px] md:text-[22px] text-slate-700" onClick={() => setToggleLeft(false)}>  
@@ -114,12 +113,11 @@ useEffect(() => {
 
                 <li className="sm:mr-[12px] mr-[12px] mb-[-1px]">
                   <Link href="/library" className="sm:w-[55px] sm:h-[55px] w-[45px] h-[45px]">
-                    <Image  
+                    <img  
                         src="/Image/library.png"
                         alt="liked things"
                         width={55}
                         height={55}
-                        priority 
                         className="object-fit h-auto hover:scale-105  transition-transform duration-200"
                       />
                   </Link>

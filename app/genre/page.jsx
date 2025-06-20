@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import Image from "next/image"
+//import Image from "next/image"
 import { useEffect, useState } from "react"
 import { useAppContext } from "../../context"
 import axiosInstance from "../../utils/axiosInstance"
@@ -62,13 +62,12 @@ const Genre = () => {
         return (
             <Link  key={genre["id"]} href={`/genre/${genre["id"]}`} className='flex flex-col items-center bg-white shadow-custom-2 hover:shadow-custom hover:scale-105 transition-transform duration-200 w-[170px] p-1 rounded-md'>
                 <div className="h-[180px] w-[155px] flex overflow-hidden rounded-md">
-                    <Image
+                    <img
                         alt="check surat kitap"
                         src={arr.includes(genre["id"]) ? `/genre/${genre["id"]}.png` : "/genre/default.png"}
                         height={180}
                         width={155}
                         className="object-cover object-center w-full h-auto"
-                        priority 
                     />
                 </div>
                 <div 

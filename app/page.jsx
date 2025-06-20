@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import Image from "next/image";
+//import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { useAppContext } from "../context";
 import axiosInstance from "../utils/axiosInstance";
@@ -273,14 +273,13 @@ const Home = () => {
                     </i>
                 </button>
                 <Link className="h-[220px] flex w-[150px] overflow-hidden mr-[5px] rounded-md" href={`/book/${id}`}>
-                    <Image
+                    <img
                         alt={title}
                         src={imageUrl}
                         height={205}
                         width={108}
                         className="object-fit object-center rounded-md w-full h-auto"
-                        onLoad={() => handleImageLoad(index)} 
-                        priority
+                        onLoad={() => handleImageLoad(index)}
                     />
                 </Link>
                 <Link

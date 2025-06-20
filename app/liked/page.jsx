@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import Image from "next/image";
+//import Image from "next/image";
 
 // const isMobileDevice = () => {
 //     if (typeof navigator !== 'undefined') {
@@ -181,13 +181,12 @@ const Page = () => {
                         </i>
                     </button>
                      <Link className="h-[220px] flex w-[150px] overflow-hidden mr-[5px] rounded-md" href={`/book/${book?.["book"]?.["id"]}`}>
-                        <Image
+                        <img
                             alt="check surat kitap"
                             src={book?.["book"]?.["get_image"] ? `${base_URL}${book?.["book"]?.["get_image"]}` : "/default-book.png"}
                             height={205}
                             width={108}
                             className="object-fit object-center rounded-sm w-full h-auto"
-                            priority 
                         />
                     </Link>
                     <Link href={`/book/${book?.["book"]?.["id"]}`} className="font-custom-sans w-full whitespace-nowrap overflow-hidden leading-6 text-ellipsis font-semibold text-[14px] ml-[2px]">

@@ -5,7 +5,7 @@ import Genres from "../../components/components2/Genres";
 import FavouriteBooks from "../../components/components2/FavouriteBooks";
 import SearchForm from "../../components/components2/search-form";
 import { useAppContext } from "../../context"
-import Image from "next/image";
+//import Image from "next/image";
 import Link from "next/link";
 
 
@@ -25,13 +25,12 @@ const LeftSideBar = () => {
       <div key={book["id"]}>
         <div className="flex items-center">
           <div className="flex  w-[60px] h-[60px] p-1  overflow-hidden rounded-full">
-            <Image 
+            <img 
               alt="group image"
               height={60}
               width={60}
               src={`/genre/${book["id"]}.png`}
               className="rounded-full object-cover object-center w-full h-auto"
-              priority 
             />
           </div>
           <div className="flex flex-col ml-[7px]">
