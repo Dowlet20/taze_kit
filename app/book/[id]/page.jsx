@@ -15,8 +15,8 @@ import {
 
  
 
-// const base_URL= 'http://192.168.55.140:4000';
-const base_URL= 'http://192.168.55.140:4000';
+// const base_URL= 'http://kitap.edu:4000';
+const base_URL= 'http://kitap.edu:4000';
 
 const Page = ({params}) => {
     const [book, setBook] = useState({});

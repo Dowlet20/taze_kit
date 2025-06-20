@@ -1,5 +1,5 @@
 
-import { Inter } from "next/font/google";
+//import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "./main_components/Nav.jsx"
 import { AppWrapper } from "../context";
@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import Loading from "./loading";
 
 
-const inter = Inter({ subsets: ["latin"] });
+//const inter = Inter({ subsets: ["latin"] });
 
 
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Suspense fallback={<Loading />}>
           <AppWrapper>
             <div className='mt-2'>

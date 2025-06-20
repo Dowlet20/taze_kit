@@ -11877,8 +11877,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
 
 
-// const baseUrl= 'http://192.168.55.140:4000';
-var baseUrl = 'http://192.168.55.140:4000';
+// const baseUrl= 'http://kitap.edu:4000';
+var baseUrl = 'http://kitap.edu:4000';
 var axiosInstance = axios__WEBPACK_IMPORTED_MODULE_0__["default"].create({
   baseURL: baseUrl,
   headers: {

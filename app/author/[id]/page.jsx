@@ -15,10 +15,10 @@ import Stack from '@mui/material/Stack';
 //   };
   
 //   const base_URL = isMobileDevice()
-//     ? 'http://192.168.55.140:4000'  
+//     ? 'http://kitap.edu:4000'  
 //     : 'http://10.10.73.31:4000';  
     
-const base_URL= 'http://192.168.55.140:4000';  
+const base_URL= 'http://kitap.edu:4000';  
 
 const Author = ({params}) => {
     const {
