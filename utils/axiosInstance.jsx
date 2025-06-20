@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 // const baseUrl= 'http://kitap.edu:4000';
-const baseUrl= 'http://192.168.0.11:4000';
+const baseUrl= 'http://192.168.55.140:4000';
 
 const axiosInstance = axios.create({
   baseURL: baseUrl, 

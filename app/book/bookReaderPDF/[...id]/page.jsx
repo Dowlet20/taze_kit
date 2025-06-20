@@ -4,8 +4,8 @@ import { useState } from "react";
 import PdfViewer from "../../../main_components/PdfViewer";
 
 
-// const base_URL= 'http://192.168.0.11:4000';
-const base_URL= 'http://192.168.0.11:4000';
+// const base_URL= 'http://192.168.55.140:4000';
+const base_URL= 'http://192.168.55.140:4000';
 
 const Page = ({params}) => {
   return (
